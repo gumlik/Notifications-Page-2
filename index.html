@@ -13,7 +13,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Notifications page</title>
-    <script src="./script.js"></script>
   </head>
   <body>
     <main>
@@ -22,7 +21,7 @@
         <button id="mark-all">Mark all as read</button>
       </header>
 
-      <div class="notifications unread">
+      <notification class="notifications unread">
         <img
           src="./assets/images/avatar-mark-webber.webp"
           alt="avatar-mark-webber"
@@ -32,43 +31,49 @@
             <div class="name">Mark Webber</div>
             <div class="description">reacted to your recent post</div>
             <div class="notif-action">
-              My first tournament today!<span class="dot"></span>
+              My first tournament today!
+              <!-- <span class="dot"></span> -->
             </div>
+            <div class="dot"></div>
           </div>
           <div class="time">1m ago</div>
         </div>
-      </div>
+      </notification>
 
-      <div class="notifications unread">
+      <notification class="notifications unread">
         <img src="./assets/images/avatar-angela-gray.webp" />
         <div class="notif-box">
           <div class="name-desc">
             <div class="name">Angela Grey</div>
-            <div class="description">followed you<span class="dot"></span></div>
+            <div class="description">followed you</div>
+            <div class="dot"></div>
           </div>
           <div class="time">1m ago</div>
         </div>
-      </div>
+      </notification>
 
-      <div class="notifications unread">
+      <notification class="notifications unread">
         <img src="./assets/images/avatar-jacob-thompson.webp" />
         <div class="notif-box">
           <div class="name-desc">
             <div class="name">Jacob Thompson</div>
             <div class="description">has joined your club</div>
-            <div class="notif-action">Chess Club<span class="dot"></span></div>
+            <div class="notif-action">Chess Club</div>
+            <div class="dot"></div>
           </div>
           <div class="time">1m ago</div>
         </div>
-      </div>
+      </notification>
 
-      <div class="notifications read">
+      <notification class="notifications unread">
         <div class="notif-box-message">
           <div class="name-desc">
             <img src="./assets/images/avatar-rizky-hasanuddin.webp" />
             <div class="name">Rizky Hasanuddin</div>
             <div class="description">sent you a private message</div>
+            <div class="dot"></div>
           </div>
+
           <div class="time2">5 days ago</div>
           <div class="message">
             Hello, thanks for setting up the Chess Club. I've been a member for
@@ -76,21 +81,22 @@
             game.
           </div>
         </div>
-      </div>
+      </notification>
 
-      <div class="notifications read">
+      <notification class="notifications unread">
         <img src="./assets/images/avatar-kimberly-smith.webp" />
         <div class="notif-box">
           <div class="name-desc">
             <div class="name">Kimberly Smith</div>
             <div class="description">commented on your picture</div>
             <img src="./assets/images/image-chess.webp" alt="" />
+            <div class="dot"></div>
           </div>
           <div class="time">1 week ago</div>
         </div>
-      </div>
+      </notification>
 
-      <div class="notifications read">
+      <notification class="notifications unread">
         <img src="./assets/images/avatar-nathan-peterson.webp" />
         <div class="notif-box">
           <div class="name-desc">
@@ -99,22 +105,25 @@
             <div class="notif-action">
               5 end-game strategies to increase your win rate
             </div>
+            <div class="dot"></div>
           </div>
           <div class="time">2 weeks ago</div>
         </div>
-      </div>
+      </notification>
 
-      <div class="notifications read">
+      <notification class="notifications unread">
         <img src="./assets/images/avatar-anna-kim.webp" />
         <div class="notif-box">
           <div class="name-desc">
             <div class="name">Anna Kim</div>
             <div class="description">left the group</div>
             <div class="notif-action">Chess Club</div>
+            <div class="dot"></div>
           </div>
+
           <div class="time">2 weeks ago</div>
         </div>
-      </div>
+      </notification>
     </main>
     <div class="attribution">
       Challenge by
@@ -122,5 +131,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Brian Mikasa</a>.
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -17,7 +17,6 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 15px;
   box-sizing: border-box;
-  background-color: var(li);
 }
 
 body {
@@ -59,13 +58,6 @@ img {
   font-size: 20px;
 }
 
-.dot {
-  padding: 4px;
-  background-color: var(--Red);
-  border-radius: 50%;
-  display: inline-block;
-}
-
 #mark-all {
   outline: none;
   background: transparent;
@@ -95,9 +87,9 @@ img {
   color: var(--Grayish-blue);
 }
 
-.notifications {
+notification {
   color: var(--Dark-grayish-blue);
-  background-color: hsl(210, 60%, 98%);
+  /* background-color: hsl(210, 60%, 98%); */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -150,4 +142,12 @@ img {
 
 .unread {
   background-color: hsl(210, 60%, 98%);
+}
+
+.unread .dot {
+  padding: 4px;
+  background-color: var(--Red);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 4px;
 }
