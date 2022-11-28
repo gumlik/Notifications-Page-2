@@ -22,17 +22,18 @@
 
 body {
   padding: 10rem;
+  background-color: rgb(238, 238, 238);
 }
 
 main {
-  border: 3px solid green;
+  border-radius: 5px;
   padding: 2rem;
+  background-color: white;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  border: 3px solid rgb(194, 32, 167);
   padding: 1rem;
   margin: 1rem;
   border-radius: 7px;
@@ -53,13 +54,54 @@ img {
   height: 54px;
 }
 
+.notif {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dot {
+  padding: 4px;
+  background-color: var(--Red);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#mark-all {
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#mark-all:hover {
+  color: var(--Blue);
+}
+
+.name {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: var(--Blue);
+}
+
+.notif-action {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 14px;
+  color: var(--Grayish-blue);
+}
+
 .notifications {
-  border: 3px solid green;
+  color: var(--Dark-grayish-blue);
   background-color: hsl(210, 60%, 98%);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2px;
+  padding: 8px;
   margin: 1rem;
   padding-left: 20px;
   border-radius: 7px;
@@ -104,4 +146,8 @@ img {
   padding: 1rem;
   margin: 1rem;
   margin-left: 56px;
+}
+
+.unread {
+  background-color: hsl(210, 60%, 98%);
 }
