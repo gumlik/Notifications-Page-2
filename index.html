@@ -11,101 +11,124 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+<link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | Notifications page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
     </style>
   </head>
   <body>
     <main>
       <header>
-        <div>Notifications 3</div>
+        <div>Notifications<span>3</span></div>
         <div>Mark all as read</div>
       </header>
+
       <div class="notifications">
         <div class="unread"></div>
         <img
           src="./assets/images/avatar-mark-webber.webp"
           alt="avatar-mark-webber"
         />
-        <div class="name">Mark Webber</div>
-        <div class="description">reacted to your recent post</div>
-        <div class="notif-action">My first tournament today!</div>
-        <div class="time">1m ago</div>
+        <div class = 'notif-box'>
+          <div class = 'name-desc'>
+            <div class="name">Mark Webber</div>
+            <div class="description">reacted to your recent post</div>
+            <div class="notif-action">My first tournament today!</div>
+          </div>
+          <div class="time">1m ago</div>
+        </div>
       </div>
-      <div class="notifcations">
+
+      <div class="notifications">
         <div class="unread"></div>
         <img
           src="./assets/images/avatar-angela-gray.webp"
-          alt="avatar-angela-gray"
         />
-        <div class="name">Angela Grey</div>
-        <div class="description">followed you</div>
-        <div class="time">5m ago</div>
+        <div class = 'notif-box'>
+          <div class = 'name-desc'>
+            <div class="name">Angela Grey</div>
+            <div class="description">followed you</div>
+          </div>
+          <div class="time">1m ago</div>
+        </div>
       </div>
+
       <div class="notifications">
         <div class="unread"></div>
         <img
           src="./assets/images/avatar-jacob-thompson.webp"
-          alt="avatar-jacob-thompson"
         />
-        <div class="name">Jacob Thompson</div>
-        <div class="description">has joined your group</div>
-        <div class="notif-action">Chess Club</div>
-        <div class="time">1 day ago</div>
-      </div>
-      <div class="notifications">
-        <div class="read"></div>
-        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
-        <div class="name">Rizky Hasanuddin</div>
-        <div class="description">sent you a private message</div>
-        <div class="time">5 days ago</div>
-        <div class="message">
-          Hello, thanks for setting up the Chess Club. I've been a member for a
-          few weeks now and I'm already having lots of fun and improving my
-          game.
+        <div class = 'notif-box'>
+          <div class = 'name-desc'>
+            <div class="name">Jacob Thompson</div>
+            <div class="description">has joined your club</div>
+            <div class="notif-action">Chess Club</div>
+          </div>
+          <div class="time">1m ago</div>
         </div>
       </div>
-      <div class="notifcations">
+
+      <div class="notifications">
         <div class="read"></div>
+        <div class = 'notif-box-message'>
+          <div class = 'name-desc'>      
+            <img
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+          />  
+            <div class="name">Rizky Hasanuddin</div>
+            <div class="description">sent you a private message</div>
+          </div>
+          <div class="time2">5 days ago</div>
+          <div class="message">Hello, thanks for setting up the Chess Club. I've been a member for a
+            few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </div>
+      </div>
+
+      <div class="notifications">
+        <div class="unread"></div>
         <img
           src="./assets/images/avatar-kimberly-smith.webp"
-          alt="avatar-kimberly-smith"
         />
-        <div class="name">Kimberly Smith</div>
-        <div class="description">commented on your picture</div>
-        <img src="./assets/images/image-chess.webp" alt="" />
-        <div class="time">1 week ago</div>
+        <div class = 'notif-box'>
+          <div class = 'name-desc'>
+            <div class="name">Kimberly Smith</div>
+            <div class="description">commented on your picture</div>
+            <img src="./assets/images/image-chess.webp" alt="">
+          </div>
+          <div class="time">1 week ago</div>
+        </div>
       </div>
+
       <div class="notifications">
-        <div class="read"></div>
+        <div class="unread"></div>
         <img
           src="./assets/images/avatar-nathan-peterson.webp"
-          alt="avatar-nathan-peterson"
         />
-        <div class="name">Nathan Peterson</div>
-        <div class="description">reacted to your recent post</div>
-        <div class="notif-action">
-          5 end-game strategies to increase your win rate
+        <div class = 'notif-box'>
+          <div class = 'name-desc'>
+            <div class="name">Nathan Peterson</div>
+            <div class="description">reacted to your recent post</div>
+            <div class="notif-action">5 end-game strategies to increase your win rate</div>
+          </div>
+          <div class="time">2 weeks ago</div>
         </div>
-        <div class="time">2 weeks ago</div>
       </div>
+
       <div class="notifications">
-        <div class="read"></div>
-        <img src="./assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim" />
-        <div class="name">Anna Kim</div>
-        <div class="description">left the group</div>
-        <div class="notif-action">Chess Club</div>
-        <div class="time">2 weeks ago</div>
+        <div class="unread"></div>
+        <img
+          src="./assets/images/avatar-anna-kim.webp"
+        />
+        <div class = 'notif-box'>
+          <div class = 'name-desc'>
+            <div class="name">Anna Kim</div>
+            <div class="description">left the group</div>
+            <div class="notif-action">Chess Club</div>
+          </div>
+          <div class="time">2 weeks ago</div>
+        </div>
       </div>
     </main>
     <div class="attribution">
