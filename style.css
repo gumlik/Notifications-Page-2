@@ -24,6 +24,12 @@ body {
   background-color: rgb(238, 238, 238);
 }
 
+@media (max-width: 600px) {
+  body {
+    margin: 8px;
+  }
+}
+
 main {
   border-radius: 5px;
   padding: 2rem;
@@ -89,7 +95,6 @@ img {
 
 notification {
   color: var(--Dark-grayish-blue);
-  /* background-color: hsl(210, 60%, 98%); */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -150,4 +155,8 @@ notification {
   border-radius: 50%;
   display: inline-block;
   margin: 4px;
+}
+
+.attribution {
+  text-align: center;
 }
