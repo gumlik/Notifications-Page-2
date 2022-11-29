@@ -74,7 +74,6 @@ I am starting to get a grasp around javascript but I am only a couple weeks in. 
 
 - [foreach method](https://www.w3schools.com/jsref/jsref_foreach.asp) - This page helped me understand the foreach method. Also, this youtube video (https://www.youtube.com/watch?v=6Hb0qZ3PVWI&ab_channel=CodewithAniaKub%C3%B3w) really broke is down in a very understandable way. 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
