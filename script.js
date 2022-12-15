@@ -2,11 +2,11 @@
 
 // Mark all as read
 const ui_all_unread = () => {
-  let unread = document.querySelectorAll(".unread");
-  let dots = document.querySelectorAll(".dot");
+  let unreadNotifications = document.querySelectorAll(".unread");
+  let notifDots = document.querySelectorAll(".dot");
 
-  unread.forEach((element) => element.classList.remove("unread"));
-  dots.forEach((element) => element.classList.remove("dot"));
+  unreadNotifications.forEach((element) => element.classList.remove("unread"));
+  notifDots.forEach((element) => element.classList.remove("dot"));
   document.querySelector("span").textContent = 0;
 };
 
@@ -21,36 +21,18 @@ for (let i = 0; i < unreadNotif.length; i++) {
   });
 }
 
-// counter
-// const setCounter = function () {
-//   const unreadElementsArr = [...document.getElementsByClassName("unread")];
-
-//   let counter = unreadElementsArr.length;
-//   document.querySelector("span").textContent = counter;
-//   console.log(counter);
-// };
-// setCounter();
-
+// Updates counter when a notification is read
 const setCounter = function () {
-  // Get all elements with the "unread" class
   const unreadElementsArr = [...document.getElementsByClassName("unread")];
-
-  // Get the number of elements with the "unread" class
   let counter = unreadElementsArr.length;
-
-  // Update the text content of the "span" element to the number of unread elements
   document.querySelector("span").textContent = counter;
 };
 
 const unreadNotifs = document.querySelectorAll(".unread");
 
 for (let i = 0; i < unreadNotifs.length; i++) {
-  // Add an event listener to the notification that calls the setCounter function when the notification is clicked
   unreadNotif[i].addEventListener("click", function () {
-    // Remove the "unread" class from the clicked notification
     unreadNotif[i].classList.remove("unread");
-
-    // Update the counter
     setCounter();
   });
 }
