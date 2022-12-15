@@ -18,6 +18,7 @@ const unreadNotif = document.querySelectorAll(".unread");
 for (let i = 0; i < unreadNotif.length; i++) {
   unreadNotif[i].addEventListener("click", function () {
     unreadNotif[i].classList.remove("unread");
+    setCounter();
   });
 }
 
@@ -27,14 +28,5 @@ const setCounter = function () {
   let counter = unreadElementsArr.length;
   document.querySelector("span").textContent = counter;
 };
-
-const unreadNotifs = document.querySelectorAll(".unread");
-
-for (let i = 0; i < unreadNotifs.length; i++) {
-  unreadNotif[i].addEventListener("click", function () {
-    unreadNotif[i].classList.remove("unread");
-    setCounter();
-  });
-}
 
 setCounter();
