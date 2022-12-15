@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   padding: 10rem;
   background-color: rgb(238, 238, 238);
 }
@@ -28,7 +28,7 @@ body {
   body {
     margin: 8px;
   }
-}
+} */
 
 main {
   border-radius: 5px;
@@ -93,7 +93,7 @@ img {
   color: var(--Grayish-blue);
 }
 
-notification {
+li {
   color: var(--Dark-grayish-blue);
   display: flex;
   flex-wrap: wrap;

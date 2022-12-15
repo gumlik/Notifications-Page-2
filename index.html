@@ -17,113 +17,114 @@
   <body>
     <main>
       <header>
-        <div class="notif">Notifications<span>3</span></div>
+        <div class="notif">Notifications<span>4</span></div>
         <button id="mark-all">Mark all as read</button>
       </header>
-
-      <notification class="notifications unread">
-        <img
-          src="./assets/images/avatar-mark-webber.webp"
-          alt="avatar-mark-webber"
-        />
-        <div class="notif-box">
-          <div class="name-desc">
-            <div class="name">Mark Webber</div>
-            <div class="description">reacted to your recent post</div>
-            <div class="notif-action">
-              My first tournament today!
-              <!-- <span class="dot"></span> -->
+      <ul id="notifications-list">
+        <li class="notifications unread" id="mark">
+          <img
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="avatar-mark-webber"
+          />
+          <div class="notif-box">
+            <div class="name-desc">
+              <div class="name">Mark Webber</div>
+              <div class="description">reacted to your recent post</div>
+              <div class="notif-action">
+                My first tournament today!
+                <!-- <span class="dot"></span> -->
+              </div>
+              <div class="dot"></div>
             </div>
-            <div class="dot"></div>
+            <div class="time">1m ago</div>
           </div>
-          <div class="time">1m ago</div>
-        </div>
-      </notification>
+        </li>
 
-      <notification class="notifications unread">
-        <img src="./assets/images/avatar-angela-gray.webp" />
-        <div class="notif-box">
-          <div class="name-desc">
-            <div class="name">Angela Grey</div>
-            <div class="description">followed you</div>
-            <div class="dot"></div>
-          </div>
-          <div class="time">1m ago</div>
-        </div>
-      </notification>
-
-      <notification class="notifications unread">
-        <img src="./assets/images/avatar-jacob-thompson.webp" />
-        <div class="notif-box">
-          <div class="name-desc">
-            <div class="name">Jacob Thompson</div>
-            <div class="description">has joined your club</div>
-            <div class="notif-action">Chess Club</div>
-            <div class="dot"></div>
-          </div>
-          <div class="time">1m ago</div>
-        </div>
-      </notification>
-
-      <notification class="notifications unread">
-        <div class="notif-box-message">
-          <div class="name-desc">
-            <img src="./assets/images/avatar-rizky-hasanuddin.webp" />
-            <div class="name">Rizky Hasanuddin</div>
-            <div class="description">sent you a private message</div>
-            <div class="dot"></div>
-          </div>
-
-          <div class="time2">5 days ago</div>
-          <div class="message">
-            Hello, thanks for setting up the Chess Club. I've been a member for
-            a few weeks now and I'm already having lots of fun and improving my
-            game.
-          </div>
-        </div>
-      </notification>
-
-      <notification class="notifications unread">
-        <img src="./assets/images/avatar-kimberly-smith.webp" />
-        <div class="notif-box">
-          <div class="name-desc">
-            <div class="name">Kimberly Smith</div>
-            <div class="description">commented on your picture</div>
-            <img src="./assets/images/image-chess.webp" alt="" />
-            <div class="dot"></div>
-          </div>
-          <div class="time">1 week ago</div>
-        </div>
-      </notification>
-
-      <notification class="notifications unread">
-        <img src="./assets/images/avatar-nathan-peterson.webp" />
-        <div class="notif-box">
-          <div class="name-desc">
-            <div class="name">Nathan Peterson</div>
-            <div class="description">reacted to your recent post</div>
-            <div class="notif-action">
-              5 end-game strategies to increase your win rate
+        <li class="notifications unread" id="angela">
+          <img src="./assets/images/avatar-angela-gray.webp" />
+          <div class="notif-box">
+            <div class="name-desc">
+              <div class="name">Angela Grey</div>
+              <div class="description">followed you</div>
+              <div class="dot"></div>
             </div>
-            <div class="dot"></div>
+            <div class="time">1m ago</div>
           </div>
-          <div class="time">2 weeks ago</div>
-        </div>
-      </notification>
+        </li>
 
-      <notification class="notifications unread">
-        <img src="./assets/images/avatar-anna-kim.webp" />
-        <div class="notif-box">
-          <div class="name-desc">
-            <div class="name">Anna Kim</div>
-            <div class="description">left the group</div>
-            <div class="notif-action">Chess Club</div>
-            <div class="dot"></div>
+        <li class="notifications unread" id="jacob">
+          <img src="./assets/images/avatar-jacob-thompson.webp" />
+          <div class="notif-box">
+            <div class="name-desc">
+              <div class="name">Jacob Thompson</div>
+              <div class="description">has joined your club</div>
+              <div class="notif-action">Chess Club</div>
+              <div class="dot"></div>
+            </div>
+            <div class="time">1m ago</div>
           </div>
+        </li>
 
-          <div class="time">2 weeks ago</div>
-        </div>
-      </notification>
+        <li class="notifications unread" id="rizky">
+          <div class="notif-box-message">
+            <div class="name-desc">
+              <img src="./assets/images/avatar-rizky-hasanuddin.webp" />
+              <div class="name">Rizky Hasanuddin</div>
+              <div class="description">sent you a private message</div>
+              <div class="dot"></div>
+            </div>
+
+            <div class="time2">5 days ago</div>
+            <div class="message">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </li>
+
+        <li class="notifications unread" id="kimberly">
+          <img src="./assets/images/avatar-kimberly-smith.webp" />
+          <div class="notif-box">
+            <div class="name-desc">
+              <div class="name">Kimberly Smith</div>
+              <div class="description">commented on your picture</div>
+              <img src="./assets/images/image-chess.webp" alt="" />
+              <div class="dot"></div>
+            </div>
+            <div class="time">1 week ago</div>
+          </div>
+        </li>
+
+        <li class="notifications unread" id="nathan">
+          <img src="./assets/images/avatar-nathan-peterson.webp" />
+          <div class="notif-box">
+            <div class="name-desc">
+              <div class="name">Nathan Peterson</div>
+              <div class="description">reacted to your recent post</div>
+              <div class="notif-action">
+                5 end-game strategies to increase your win rate
+              </div>
+              <div class="dot"></div>
+            </div>
+            <div class="time">2 weeks ago</div>
+          </div>
+        </li>
+
+        <li class="notifications unread" id="anna">
+          <img src="./assets/images/avatar-anna-kim.webp" />
+          <div class="notif-box">
+            <div class="name-desc">
+              <div class="name">Anna Kim</div>
+              <div class="description">left the group</div>
+              <div class="notif-action">Chess Club</div>
+              <div class="dot"></div>
+            </div>
+
+            <div class="time">2 weeks ago</div>
+          </div>
+        </li>
+      </ul>
     </main>
     <div class="attribution">
       Challenge by
